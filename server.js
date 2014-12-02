@@ -1,12 +1,15 @@
 var express 	= require('express');
 var app 		= express()
   , server 		= require('http').createServer(app)
-  , io 			= require('socket.io').listen(server);
+  , io 			= require('socket.io').listen(server)
+  , bodyParser  = require('body-parser');
 
 var port = Number(process.env.PORT || 8090);
 
 server.listen(port);
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.static(__dirname + '/frontend'));
 
 app.get('/', function (req, res) {
@@ -22,8 +25,7 @@ app.post('/*', function(req, res){
 	io.sockets.emit('posted', { body: req.body, 
 								query: req.query, 
 								params: req.params });
-
-    io.sockets.emit('postedRaw', { rawPost: req });
+    res.send(200);
 });
 
 io.sockets.on('connection', function (socket) {
