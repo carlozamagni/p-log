@@ -1,5 +1,5 @@
 {
-	"name": "plog",
+	"name": "p-log",
 	"main": "server.js",
 	"version": "0.0.1",
   	"author": "Carlo Zamagni",
