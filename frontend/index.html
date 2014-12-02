@@ -24,10 +24,13 @@
                           <h3>HTTP Post monitor <span class="label label-warning">Connection in progress</span></h3>
                       </div>
                       <div ng-switch-when="connected">
-                          <h3>Post monitor <span class="label label-success">Connected</span></h3>
+                          <h3>HTTP Post monitor <span class="label label-success">Connected</span></h3>
+                      </div>
+                      <div ng-switch-when="disconnected">
+                          <h3>HTTP Post monitor <span class="label label-danger">Connection lost</span></h3>
                       </div>
                       <div ng-switch-default>
-                          <h3>Post monitor <span class="label label-warning">Connection in progress</span></h3>
+                          <h3>HTTP Post monitor <span class="label label-warning">Connection in progress</span></h3>
                       </div>
                   </div>
             </div>
