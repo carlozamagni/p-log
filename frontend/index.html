@@ -35,7 +35,7 @@
                   </div>
             </div>
             <hr>
-            <div class="panel panel-default" ng-repeat="data in received">
+            <div class="panel panel-default" ng-repeat="data in received | orderBy:'+':true">
               <div class="panel-heading">
                 <h3 class="panel-title">{{ lastReceivedTimestamp }}</h3>
               </div>
