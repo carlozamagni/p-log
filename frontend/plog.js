@@ -9,9 +9,11 @@ plog.controller('postedDataController', function ($scope){
     
     $scope.received = [];
     $scope.connected = 'waiting';
+    $scope.lastReceivedTimestamp = '';
 
     socket.on('posted', function (data) {
         $scope.received.push({body:data['body'], query:data['query'], params:data['params']});
+        $scope.lastReceivedTimestamp = new Date().toLocaleString();
         $scope.$apply();
     });
 
