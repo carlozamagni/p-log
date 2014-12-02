@@ -5,7 +5,7 @@ var app = angular.module('plog');
 app.controller('postedDataController', function ($scope){
 
     //var socket = io.connect('http://localhost:8090');
-    var socket = io.connect('https://p-log.herokuapp.com');
+    var socket = io.connect('http://p-log.herokuapp.com');
     
     $scope.received = [];
     $scope.connected = 'waiting for connection';
