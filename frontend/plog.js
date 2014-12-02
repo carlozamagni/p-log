@@ -1,8 +1,8 @@
 'use strict';
 
-var app = angular.module('p-log');
+var plog = angular.module('plog',['ngRoute']);
 
-app.controller('postedDataController', function ($scope){
+plog.controller('postedDataController', function ($scope){
 
     //var socket = io.connect('http://localhost:8090');
     var socket = io.connect('http://p-log.herokuapp.com');
