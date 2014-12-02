@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.025796661" vertical-offset="0" max-vertical-offset="731">
+            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="731">
               <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plog.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plog.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/plog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.47153285" vertical-offset="0" max-vertical-offset="685">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/frontend/plog.js" />
         <option value="$PROJECT_DIR$/frontend/index.html" />
+        <option value="$PROJECT_DIR$/frontend/plog.js" />
       </list>
     </option>
   </component>
@@ -301,18 +301,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/plog.js">
+    <entry file="file://$PROJECT_DIR$/frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="731">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
+    <entry file="file://$PROJECT_DIR$/frontend/plog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025796661" vertical-offset="0" max-vertical-offset="731">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.47153285" vertical-offset="0" max-vertical-offset="685">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
           <folding />
         </state>
       </provider>
