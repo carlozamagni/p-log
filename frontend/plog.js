@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('plog');
+var app = angular.module('p-log');
 
 app.controller('postedDataController', function ($scope){
 
