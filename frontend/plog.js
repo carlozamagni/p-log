@@ -8,20 +8,15 @@ plog.controller('postedDataController', function ($scope){
     var socket = io.connect('https://p-log.herokuapp.com');
     
     $scope.received = [];
-    $scope.connected = 'waiting for connection';
+    $scope.connected = 'waiting';
 
     socket.on('posted', function (data) {
         $scope.received.push({body:data['body'], query:data['query'], params:data['params']});
         $scope.$apply();
     });
 
-    socket.on('postedRaw', function (data) {
-        $scope.received.push({rawRequest:data['rawPost']});
-        $scope.$apply();
-    });
-
     socket.on('connected', function (data) {
-        $scope.connected = data['connected'];
+        $scope.connected = 'connected';
         $scope.$apply();
     });
   });
