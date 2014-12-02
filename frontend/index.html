@@ -19,17 +19,15 @@
 
         <div ng-controller="postedDataController">
             <div class="row">
-                <p>Post monitor</p>
-                <p>{{ connected }}</p>
                 <div ng-switch on="connected">
                       <div ng-switch-when="waiting">
-                          <span class="label label-warning">Connection in progress</span>
+                          <h3>Post monitor <span class="label label-warning">Connection in progress</span></h3>
                       </div>
                       <div ng-switch-when="connected">
-                          <span class="label label-success">Connected</span>
+                          <h3>Post monitor <span class="label label-success">Connected</span></h3>
                       </div>
                       <div ng-switch-default>
-                          <span class="label label-warning">Connection in progress</span>
+                          <h3>Post monitor <span class="label label-warning">Connection in progress</span></h3>
                       </div>
                   </div>
             </div>
