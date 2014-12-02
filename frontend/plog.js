@@ -15,6 +15,11 @@ plog.controller('postedDataController', function ($scope){
         $scope.$apply();
     });
 
+    socket.on('postedRaw', function (data) {
+        $scope.received.push({rawRequest:data['rawPost']});
+        $scope.$apply();
+    });
+
     socket.on('connected', function (data) {
         $scope.connected = data['connected'];
         $scope.$apply();

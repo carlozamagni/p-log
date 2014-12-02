@@ -22,6 +22,8 @@ app.post('/*', function(req, res){
 	io.sockets.emit('posted', { body: req.body, 
 								query: req.query, 
 								params: req.params });
+
+    io.sockets.emit('postedRaw', { rawPost: req });
 });
 
 io.sockets.on('connection', function (socket) {
